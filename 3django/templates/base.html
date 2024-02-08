@@ -1,0 +1,14 @@
+<!-- templates/base.html -->
+
+<header>
+    <a href="{% url 'home' %}">Home Page</a> | <a href="{% url 'about' %}">About</a> | <a href="{% url 'contactus' %}">Contact Us</a>
+    <!-- <a> tag is for creating Hyperlinks in HTML -->
+    <!-- "Home Page" will be the Text of the Hyperlink -->
+    <!-- Django Tag "url 'home'" will provide the location of the Hyperlink -->
+</header>
+
+<!-- Block Content Tags can be overwritten by child templates via inheritance -->
+{% block content %}
+{% endblock content %}
+<!-- You can also write "endblock" but for readability we use "endblock content"  -->
+<!-- Even in comments you cannot use Django Tags -->
